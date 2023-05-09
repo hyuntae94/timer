@@ -1,0 +1,141 @@
+body {
+    box-sizing: border-box;
+    margin : 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
+}
+
+.weniv {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 30px;
+    background-image: url('/img/weniv.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.timerBox {
+    width: 700px;
+    height: 700px;
+    background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+    border-radius: 16px;
+}
+
+.timerHeader {
+    position: relative;
+    font-family: 'Pretendard';
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.timerHeader::after{
+    position: absolute;
+    content: '';
+    width: 650px;
+    height: 1px;
+    top: 100px;
+    left: 20px;
+    margin-bottom: 20px;
+    background-color: #3D538A;   
+}
+
+.timer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:700px;
+    height: 300px;
+    margin-top: 55px;
+}
+
+.HRS , .MIN, .SEC {
+    width:180px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HRS-Title, .MIN-Title, .SEC-Title{
+    font-size: 24px;
+    color: #A5B6EE;
+}
+
+.HRS-Box, .MIN-Box, .SEC-Box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:150px;
+    height: 150px;
+    background: linear-gradient(314.28deg, #304577 0%, #4C65A0 83%);
+    border: 1px solid #354971;
+    border-radius: 4px;
+}
+
+.HRS-Text,
+.MIN-Text,
+.SEC-Text{
+    font-size:80px;
+    color:#fff;
+}
+
+.HRS-Box::after,
+.MIN-Box::after{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 100px;
+    background-image: url('/img/dot.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:38px;
+    right:-50px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:inherit;
+    height: 200px;
+}
+
+.start,
+.restart{
+    width:230px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.start {
+    background-image: url('/img/start-disabled.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.restart {
+    background-image: url('/img/reset-disabled.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.wenivCorp {
+    width: 200px;
+    height: 100px;
+    margin-top: 80px;
+    background-image: url('/img/wenivCorp.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+}
